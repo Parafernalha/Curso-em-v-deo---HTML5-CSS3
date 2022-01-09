@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset=''UTF-8'' />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title>EXERCICIO 001</title>
+</head>
+<body>
+    <h1>OLÁ, MUNDO!</h1>
+    <hr />
+    <p>
+        Este e o meu primeiro documento em HTML.
+    </p>
+    <p>
+        Este e o meu primeiro site e estou muito animado.
+    </p>
+</body>
+</html>

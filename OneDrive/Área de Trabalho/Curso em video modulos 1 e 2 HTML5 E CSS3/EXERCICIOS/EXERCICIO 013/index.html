@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset='' UTF-8'' />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>MÍDIAS EM HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <hr />
+    <p>
+        Tente abrir este site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.
+    </p>
+
+    <picture>
+
+        <source media="(max-width:750px)" srcset="imagens\P.png"
+                type="image/png" /> <!-- 700px provenient from the original image plus 50px of adjustments-->
+
+
+        <source media="(max-width: 1050px)" srcset="imagens\M.png"
+                type="image/png" /><!--1000px provenient from the original image plus 50px of adjustments-->
+
+        <!-- Caminhos de imagem longos ocasionam problemas.Copiar somente o nome da imagem e o nome da pasta-->
+        <img src="C:\Users\dougl\OneDrive\Área de Trabalho\code the future\Curso em vídeo - Guanabara - HTML5 e CSS3\EXERCICIOS\EXERCICIO 013\imagens\G.png" alt="Imagem dinâmica ou flexível" />
+
+    </picture>
+</body>
+</html>
+
