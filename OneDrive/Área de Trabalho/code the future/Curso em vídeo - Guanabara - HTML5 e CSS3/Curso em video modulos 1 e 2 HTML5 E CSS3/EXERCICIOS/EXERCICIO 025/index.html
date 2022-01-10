@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset='' UTF-8'' />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>div</title>
+    <style> /*Take a look at how big the CSS got. We can avoid this using an external CSS*/
+        h1
+        {
+            text-align:center;
+            font-family:'Mongolian Baiti';
+        }
+        div#div1
+        {
+            background-color:orangered;
+            text-align:center;
+        }
+        div#div2 {
+            background-color: lightskyblue;
+            text-align: center;
+        }
+        div#div3 {
+            background-color: cornflowerblue;
+            text-align: center;
+        }
+        div#div4 {
+            background-color: aquamarine;
+            text-align: center;
+        }
+        div#div5 {
+            background-color: burlywood;
+            text-align: center;
+        }
+        div#div6 {
+            background-color: antiquewhite;
+            text-align: center;
+        }
+        div#div7 {
+            background-color: lightblue;
+            text-align: center;
+        }
+        div#div8 {
+            background-color: lightpink;
+            text-align: center;
+        }
+        .box{
+            display:inline-block;
+            width:200px;
+            height:200px;
+            border: 1px solid black /*Shorthand style*/
+        }
+        div.interactivebox:hover
+        {
+            background-color:brown;
+        }
+        .interactivebox {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            border: 1px solid black /*Shorthand style*/
+        }
+        .interactivetext:hover{
+            color:red;
+              
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>first use of the divs</h1>
+
+    <hr />
+
+    <div id="div1">One</div> <!--A div occupy the space of a row in a html page-->
+    <div id="div2">Two</div><!-- We can put another tags inside an div-->
+    <div id="div3">Three</div>
+    <div id="div4">Four</div>
+
+    <div id="div5"><p>One</p></div> <!--A div occupy the space of a row in a html page-->
+    <div id="div6"><p>Two</p></div><!-- We can put another tags inside an div-->
+    <div id="div7"><p>Three</p></div>
+    <div id="div8"><p>Four</p></div>
+
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+    <!-- Using pseudoclasses-->
+
+    <div class="interactivebox"></div> <!-- We can blend id and classes-->
+    <div class="interactivebox"></div>
+    <div class="interactivebox"></div>
+    <div class="interactivebox"></div>
+    <div class="interactivebox"></div>
+    <div class="interactivetext" align="center"><p>Ramdom text</p></div> <!--centralizing using inline edition-->
+</body>
+</html>
