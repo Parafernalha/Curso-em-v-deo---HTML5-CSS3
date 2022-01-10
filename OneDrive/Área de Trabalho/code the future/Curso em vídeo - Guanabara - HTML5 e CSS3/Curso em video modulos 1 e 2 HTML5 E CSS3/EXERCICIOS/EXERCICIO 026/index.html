@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset='' UTF-8'' />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Aula sobre Pseudo-elementos</title>
+    <style>
+        /*
+            # ---> Representa um id
+            . ---> Representa uma classe
+            : Pseudo-classe ---> ("class") usado para formatar varios estilos de uma vez.
+            :: Pseudo-elemento ---> utilizado para formatar conteúdo.
+            > ---> Elemento filho
+        */
+        .Link
+        {
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-decoration:none;
+            color:firebrick;
+            font-weight:700;
+        }
+        .Link:hover
+        {
+            color:black;
+            text-decoration:underline;
+            font-weight:bold
+        }
+        .Link:active
+        {
+            background-color:blueviolet;
+        }
+            .Link::after
+            {
+                color:rgb(185 185 185);
+                content: '[link]';
+            }
+            .Link::before {
+                color: rgb(185 185 185);
+                content: '[link]';
+            }
+            .Link:visited
+            {
+                color:red;
+            }
+            h1{
+                text-align:center;
+                font-family:'Agency FB';
+            }
+        .magic > p 
+        {
+            display: none;
+            text-align:center;
+        }
+        .magic:hover > p
+        {
+            display:block;
+            color:darkred;
+        }
+        .magic:hover
+        {
+            color: darkred;
+        }
+        ol
+        {
+        text-align:center;
+        }
+        li
+        {
+            text-align:center;
+        }
+        .magic{
+            text-align:center;
+        }
+  
+    </style>
+</head>
+<body>
+    <h1> Aula sobre Pseudo-elementos</h1>
+    <hr />
+        <ol>
+            <li>
+                <a rel="external" href="https://www.facebook.com/douglas.oliveirafernandes.5" target="_blank" class="Link">Perfil Facebook</a>
+            </li>
+            <li>
+                <a rel="external" href="https://www.instagram.com/d0ugla5o/" target="_blank" class="Link">Perfil Instagram</a>
+            </li>
+            <li>
+                <a rel="external" href="https://github.com/Parafernalha" target="_blank" class="Link">Perfil Github</a>
+            </li>
+        </ol>
+    <div class="magic">
+    For a magic text, click here.<p>Hidden text!</p></div>
+
+</body>
+</html>
